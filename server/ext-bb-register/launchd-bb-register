@@ -1,0 +1,8 @@
+[bb-register]
+        ENVFILE /usr/lib64/xymon/server/etc/hobbitserver.cfg
+        NEEDS hobbitd
+        CMD hobbitd_channel --channel=status --log=$BBSERVERLOGS/bb-register.log $BBSERVERROOT/server/ext/bb-register.sh
+        LOGFILE $BBSERVERLOGS/bb-register.log
+		#no interval, keeps it running
+
+

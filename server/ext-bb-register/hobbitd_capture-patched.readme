@@ -1,0 +1,8 @@
+patched to force it to always be line buffered
+
+        int errofs = 0;
++        //dsr
++        setvbuf(stdout,NULL,_IOLBF,0);
+        FILE *logfd = stdout;
+
+

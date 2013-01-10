@@ -1,0 +1,7 @@
+[bb-register]
+        ENVFILE $HOBBITCLIENTHOME/etc/hobbitclient.cfg
+        CMD $HOBBITCLIENTHOME/ext/bb-register.sh
+        LOGFILE $HOBBITCLIENTHOME/logs/bb-register.log
+#        INTERVAL 5m  
+        INTERVAL 1m  
+
